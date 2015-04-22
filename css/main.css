@@ -1,0 +1,72 @@
+/*-----Styles for Catfighter Game-----*/
+
+body {
+	background-color: black;
+}
+
+section.middle {
+	background-color: white;
+	padding-left: 100px;
+	margin-top: 110px;
+	height: 500px;
+	min-width: 1200px;
+	position: relative;
+    z-index: 1;
+}
+
+.ryu {
+	height: 494px;
+	width: 659px;
+	float: left;
+}
+
+.ryu-still,
+.ryu-ready,
+.ryu-throw {
+	height: 494px;
+	width: 659px;
+}
+
+.ryu-ready,
+.ryu-throw {
+	display: none;
+}
+
+.hadouken, .ryu-still, .ryu-ready, .ryu-throwing {
+	background-repeat: no-repeat;
+}
+
+
+.ryu-still {
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-ready {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-throw {
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+
+.hadouken {
+	height: 90px;
+	width: 156px;
+	background-image: url('../images/hadouken.gif');
+	display: none;
+	float: left;
+  	position: absolute;
+  	top: 170px;
+  	left: 615px;
+ 	z-index: 10;
+}
+
+
+
+
+
+
+
+
+
