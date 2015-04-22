@@ -10,7 +10,18 @@ $(document).ready (function() {
 	})
 
 	.mousedown(function() {
-		console.log('there has been a mousedown event');
+		$('.ryu-ready').hide();
+		$('.ryu-throw').show();
+		$('.hadouken').show();
+		//play sound
+		//animate hadouken left to right
+	})
+
+	.mouseup(function() {
+		$('.ryu-throw').hide();
+		$('.ryu-ready').show();
+		//stop sound
+
 	});
 
 
