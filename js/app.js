@@ -54,7 +54,7 @@ $(document)
 		$('.ryu-ready').hide();
 		$('.ryu-throw').hide();
 		$('.ryu-cool').show();
-		//playCheeze();
+		playCheeze();
 	}
 
 })
@@ -64,7 +64,7 @@ $(document)
 		$('.ryu-still').show();
 		$('.ryu-cool').hide();
 		$('.ryu-ready').hide();
-		//$('#cheezy-sound') [0].pause();
-		//$('#cheezy-sound') [0].load();
+		$('#cheezy-sound') [0].pause();
+		$('#cheezy-sound') [0].load();
 
 });
