@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keydown-test</title>
+	<style type="text/css">
+		.box {
+			background-color: red;
+			height: 500px;
+			width: 600px;
+			display:none;
+		}
+
+	</style>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript">
+			$(document).keypress(function(e) {
+    if (e.keyCode == 88)
+      alert('Boo!');
+});
+
+	</script>
+</head>
+<body>
+
+<div class="box"></div>
+	
+</body>
+</html>
