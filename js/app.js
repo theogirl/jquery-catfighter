@@ -12,6 +12,8 @@ $(document).ready (function() {
 	.mousedown(function() {
 		playHadouken();
 		$('.ryu-ready').hide();
+		$('.ryu-cool').hide();
+		$('.ryu-still').hide();
 		$('.ryu-throw').show();
 		$('.hadouken').finish().show().animate(
 			{'left': '1080px'},
@@ -38,6 +40,12 @@ function playHadouken() {
 	$('#hadouken-sound') [0].play();
 }
 
+function playCheeze() {
+	$('#cheezy-sound') [0].volume = 0.5;
+	$('#cheezy-sound') [0].load();
+	$('#cheezy-sound') [0].play();
+}
+
 //Attach the keydown event to document as a whole, since can happen anywhere!
 $(document)
 .keydown(function(event) {
@@ -46,12 +54,17 @@ $(document)
 		$('.ryu-ready').hide();
 		$('.ryu-throw').hide();
 		$('.ryu-cool').show();
-	};
+		//playCheeze();
+	}
+
 })
 
 //No need to listen for which specific key was released?
 .keyup(function() {
 		$('.ryu-still').show();
 		$('.ryu-cool').hide();
+		$('.ryu-ready').hide();
+		//$('#cheezy-sound') [0].pause();
+		//$('#cheezy-sound') [0].load();
 
 });
